@@ -6,7 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
+import { CameraPreview } from '@ionic-native/camera-preview';
 @NgModule({
   declarations: [
     MyApp,
@@ -24,6 +24,7 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+    CameraPreview,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
